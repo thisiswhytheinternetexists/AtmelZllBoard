@@ -3907,9 +3907,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="osram_led" deviceset="LRTB_GFTG" device=""/>
-<part name="R1" library="resistor" deviceset="R-EU_" device="0207/7" value="5.6R"/>
-<part name="R2" library="resistor" deviceset="R-EU_" device="0207/7" value="5.6R"/>
-<part name="R3" library="resistor" deviceset="R-EU_" device="0207/7" value="68"/>
+<part name="R1" library="resistor" deviceset="R-EU_" device="0204/5" value="5.6R"/>
+<part name="R2" library="resistor" deviceset="R-EU_" device="0204/5" value="5.6R"/>
+<part name="R3" library="resistor" deviceset="R-EU_" device="0204/5" value="68"/>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
