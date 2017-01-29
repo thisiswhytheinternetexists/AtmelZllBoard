@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -76,6 +76,35 @@
 <pad name="AGND2" x="14.2" y="14.9" drill="0.85" shape="square"/>
 <pad name="AGND" x="2.1" y="14.9" drill="0.85" shape="square"/>
 </package>
+<package name="ATSAMR21B18-MZ210PA-DEV">
+<wire x1="0" y1="0" x2="16.3" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="13.2" width="0.127" layer="21"/>
+<wire x1="16.3" y1="0" x2="16.3" y2="13.2" width="0.127" layer="21"/>
+<pad name="1" x="2.1" y="1.1" drill="0.85" shape="square"/>
+<pad name="2" x="4.1" y="1.1" drill="0.85" shape="square"/>
+<pad name="3" x="6.1" y="1.1" drill="0.85" shape="square"/>
+<pad name="4" x="8.1" y="1.1" drill="0.85" shape="square"/>
+<pad name="5" x="10.1" y="1.1" drill="0.85" shape="square"/>
+<pad name="6" x="12.1" y="1.1" drill="0.85" shape="square"/>
+<pad name="7" x="14.1" y="1.1" drill="0.85" shape="square"/>
+<wire x1="0.95" y1="19.7" x2="15.35" y2="19.7" width="0.127" layer="21"/>
+<wire x1="15.35" y1="19.7" x2="15.35" y2="14.3" width="0.127" layer="21"/>
+<wire x1="15.35" y1="14.3" x2="16.3" y2="13.2" width="0.127" layer="21" curve="90"/>
+<wire x1="0.95" y1="14.3" x2="0" y2="13.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="0.95" y1="19.7" x2="0.95" y2="14.3" width="0.127" layer="21"/>
+<pad name="AGND2" x="14.2" y="14.9" drill="0.85" shape="square"/>
+<pad name="AGND" x="2.1" y="14.9" drill="0.85" shape="square"/>
+<circle x="2.1" y="13.2" radius="0.9144" width="0.127" layer="51"/>
+<circle x="4.1" y="13.2" radius="0.9144" width="0.127" layer="51"/>
+<circle x="14.2" y="13.2" radius="0.9144" width="0.127" layer="51"/>
+<circle x="14.2" y="9.2" radius="0.9144" width="0.127" layer="51"/>
+<circle x="14.2" y="11.2" radius="0.9144" width="0.127" layer="51"/>
+<pad name="TP1" x="2.1" y="13.2" drill="0.85" diameter="1.27"/>
+<pad name="TP5" x="4.1" y="13.2" drill="0.85" diameter="1.27"/>
+<pad name="TP4" x="14.2" y="13.2" drill="0.85" diameter="1.27"/>
+<pad name="TP3" x="14.2" y="11.2" drill="0.85" diameter="1.27"/>
+<pad name="TP2" x="14.2" y="9.2" drill="0.85" diameter="1.27"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATSAMR21B18-MZ210PA">
@@ -92,6 +121,26 @@
 <pin name="PA07" x="30.48" y="12.7" length="middle" rot="R180"/>
 <pin name="AGND$2" x="30.48" y="7.62" length="middle" rot="R180"/>
 <pin name="AGND$1" x="30.48" y="2.54" length="middle" rot="R180"/>
+</symbol>
+<symbol name="ATSAMR21B18-MZ210PA-DEV">
+<wire x1="0" y1="33.02" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="25.4" y2="0" width="0.254" layer="94"/>
+<wire x1="25.4" y1="0" x2="25.4" y2="33.02" width="0.254" layer="94"/>
+<wire x1="25.4" y1="33.02" x2="0" y2="33.02" width="0.254" layer="94"/>
+<pin name="VCC" x="-5.08" y="27.94" length="middle"/>
+<pin name="GND" x="-5.08" y="22.86" length="middle"/>
+<pin name="PA16" x="-5.08" y="17.78" length="middle"/>
+<pin name="PA17" x="-5.08" y="12.7" length="middle"/>
+<pin name="PA18" x="30.48" y="30.48" length="middle" rot="R180"/>
+<pin name="PA19" x="30.48" y="25.4" length="middle" rot="R180"/>
+<pin name="PA07" x="30.48" y="20.32" length="middle" rot="R180"/>
+<pin name="AGND$2" x="30.48" y="15.24" length="middle" rot="R180"/>
+<pin name="AGND$1" x="30.48" y="10.16" length="middle" rot="R180"/>
+<pin name="RSTN" x="2.54" y="-5.08" length="middle" rot="R90"/>
+<pin name="PA30" x="7.62" y="-5.08" length="middle" rot="R90"/>
+<pin name="PA31" x="12.7" y="-5.08" length="middle" rot="R90"/>
+<pin name="PA14" x="17.78" y="-5.08" length="middle" rot="R90"/>
+<pin name="PA15" x="22.86" y="-5.08" length="middle" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -110,6 +159,34 @@
 <connect gate="G$1" pin="PA17" pad="4"/>
 <connect gate="G$1" pin="PA18" pad="5"/>
 <connect gate="G$1" pin="PA19" pad="6"/>
+<connect gate="G$1" pin="VCC" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ATSAMR21B18-MZ210PA-DEV">
+<gates>
+<gate name="G$1" symbol="ATSAMR21B18-MZ210PA-DEV" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ATSAMR21B18-MZ210PA-DEV">
+<connects>
+<connect gate="G$1" pin="AGND$1" pad="AGND"/>
+<connect gate="G$1" pin="AGND$2" pad="AGND2"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="PA07" pad="7"/>
+<connect gate="G$1" pin="PA14" pad="TP4"/>
+<connect gate="G$1" pin="PA15" pad="TP5"/>
+<connect gate="G$1" pin="PA16" pad="3"/>
+<connect gate="G$1" pin="PA17" pad="4"/>
+<connect gate="G$1" pin="PA18" pad="5"/>
+<connect gate="G$1" pin="PA19" pad="6"/>
+<connect gate="G$1" pin="PA30" pad="TP2"/>
+<connect gate="G$1" pin="PA31" pad="TP3"/>
+<connect gate="G$1" pin="RSTN" pad="TP1"/>
 <connect gate="G$1" pin="VCC" pad="1"/>
 </connects>
 <technologies>
